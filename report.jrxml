@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a243df41-66df-4856-97ca-c5611af47300">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="amount" class="java.lang.Double"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="name" class="java.lang.String"/>
+	<field name="qty" class="java.lang.Integer"/>
+	<field name="price" class="java.lang.Double"/>
+	<field name="total" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="105" splitType="Stretch">
+			<staticText>
+				<reportElement x="137" y="10" width="280" height="59" uuid="b22ee381-c272-48f4-8024-e8fff0c7a56c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="36" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Coffee App]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="75" width="391" height="21" uuid="ebfec41e-a416-4601-b081-022a0d8f38c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<text><![CDATA[Awaken Your Senses with Every Sip – Discover the Perfect Brew at Banner Coffee!]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="141" height="30" uuid="bcaead86-773e-4dde-afed-8420b2e1cabc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="61dc8c0f-43d1-4651-991e-a290c144f968"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="138" height="30" uuid="8b0895c8-e959-486b-8aaf-c0234971fd63">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49a55b1b-e822-49f5-afd4-8710b9701bdd"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="30" uuid="2d5988e6-b59f-4440-a313-6f7641d86f24">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e84b7c84-f030-4357-856c-d7d4d84a0665"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="30" uuid="a718440a-96d3-481d-be57-ececfa25de8e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="19534a56-cf4c-467e-a72c-ce3f3e8c0c7a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="141" height="30" uuid="6a9f2f4a-52a8-4459-a06f-13684d04adc9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="61dc8c0f-43d1-4651-991e-a290c144f968"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="138" height="30" uuid="8db43ec1-cb9b-4bf0-a0c3-fe5cb83a4dc7">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49a55b1b-e822-49f5-afd4-8710b9701bdd"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="138" height="30" uuid="8d3813a2-7cba-4d7c-a257-83b9047061d3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e84b7c84-f030-4357-856c-d7d4d84a0665"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="138" height="30" uuid="0a8bddac-9f5d-43b9-8c59-e09f752466eb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="19534a56-cf4c-467e-a72c-ce3f3e8c0c7a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="148" splitType="Stretch">
+			<textField pattern="EEEE dd MMMM YYYYY">
+				<reportElement x="380" y="19" width="180" height="30" uuid="1b0fdb6f-b94e-4f18-b591-bf14a0658f10"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="380" y="50" width="75" height="21" uuid="2829f02b-b01e-497c-bd73-2a4bec89d1cd"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<text><![CDATA[Amount :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="49" width="104" height="22" uuid="cd36be6e-e5b8-4f04-ab0a-a2b4ee2fb3e5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Rockwell" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{amount}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
